@@ -29,6 +29,10 @@
         "argsIgnorePattern": "_"
       }
     ],
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      { "prefixWhitI": "always" }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",

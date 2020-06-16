@@ -3,10 +3,9 @@ import fs from 'fs';
 import { injectable, inject } from 'tsyringe';
 
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
-
-import UploadConfig from '@config/upload';
-import AppError from '@shared/errors/AppError';
 import User from '@modules/users/infra/typeorm/entities/User';
+import AppError from '@shared/errors/AppError';
+import UploadConfig from '@config/upload';
 
 interface IRequest {
   user_id: string;

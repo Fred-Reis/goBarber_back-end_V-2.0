@@ -3,8 +3,8 @@ import { container } from 'tsyringe';
 
 import CreateUserService from '@modules/users/services/CreateUserService';
 
-export default class UsersController {
-  public async create(request: Request, response: Response): Promise<response> {
+export default class UsersControllers {
+  public async create(request: Request, response: Response): Promise<Response> {
     const { name, email, password } = request.body;
 
     const creatUser = container.resolve(CreateUserService);

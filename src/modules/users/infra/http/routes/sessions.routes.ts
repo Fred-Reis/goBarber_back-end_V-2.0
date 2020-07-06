@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-import SessionsController from '@modules/users/infra/http/controllers/SessionsController';
+import SessionsControllers from '@modules/users/infra/http/controllers/SessionsControllers';
 
 const sessionsRouter = Router();
-const sessionsController = new SessionsController();
+const sessionsController = new SessionsControllers();
 
 sessionsRouter.post('/', sessionsController.create);
 
